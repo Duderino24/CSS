@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	background-color: beige;
+}
+p,button,a,form {
+	font-family: Arial;
+	font-size: 20px;
+}
+.header {
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+.contentHeader {
+	align-content: center;
+	display: inline-block;
+}
+.logo {
+	width: 50px;
+	height: 50px;
+}
+
+main > div{
+	display: block;
+}
+
+
+.image {
+	background: url(../IMG/img.jpg);
+	background-attachment: fixed;
+	height: 500px;
+}
+
+
+.main {
+	margin: auto;
+	width: 100%
+	height: auto;
+}
+
+.rightBorder {
+	border-right: solid grey;
+}
+.text {
+	display: inline-block;
+	text-align: center;
+	margin: auto 25px;
+	width: 550px;
+	height: auto;
+}
+
+.smallImage {
+	width: 200px;
+	height: 200px;
+}
+
+footer {
+	color: white;
+	background-color: black;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
