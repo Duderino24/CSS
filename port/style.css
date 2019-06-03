@@ -1,0 +1,38 @@
+
+
+#hollow {
+  height: 450px;
+   left: 50%;
+   margin-top: -258px;
+   margin-left: -263px;
+   position: absolute;
+   top: 50%;
+   width: 450px;
+   animation: hollow 2s ease-in 1 forwards, slideHollow 2s ease-in 2.1s forwards;
+}
+
+#filled {
+	height: 170px;
+   left: 50%;
+   margin-top: -125px;
+   margin-left: -125px;
+   position: absolute;
+   top: 50%;
+   width: 170px;
+   animation: filled 2s ease-in 1 forwards, slide 2s ease-in 2.1s forwards;
+}
+
+@keyframes hollow {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-180deg);}
+}
+
+@keyframes filled {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(180deg);}
+}
+
+@keyframes slideHollow {
+	from {top: 280px, left: 250px;}
+	to {top: 0px, left: 0px;}
+}

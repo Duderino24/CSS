@@ -1,0 +1,175 @@
+body {
+	margin:0;
+	box-sizing:border-box;
+	font-family: Arial;
+}
+
+header {
+	position: relative;
+}
+
+#bars {
+	float: right;
+	margin-top: 10px;
+	height: 40px;
+	width: 50px;
+	cursor: pointer;
+}
+
+#hollow {
+	position: relative;
+	margin-top: 5px;
+	display: inline-block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	transition: transform ease-in 1s;
+}
+
+#hollow:hover {
+	transform: rotate(180deg);
+}
+
+#filled {
+	position: absolute;
+	top: 22px;
+	left: 32px;
+	width: 17px;
+	height: 17px;
+	transition: transform ease-in 1s;
+}
+
+#filled:hover {
+	transform: rotate(-180deg);
+}
+
+#dot {
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+h1 {
+	margin-top: -12px;
+	font-size: 3.2rem;
+	font-family: 'Michroma', sans-serif;
+	display: inline-block;
+	position: relative;
+	color: #8C856B;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+
+.overlay {
+  
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9); 
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+
+.overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center;
+  margin-top: 30px; 
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; 
+  transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.copyright {
+	background-color: #e6e6e6;
+}
+
+.copyright h2 {
+	padding: 20px 0px 0px 0px;
+}
+
+.bigImage {
+	width: 450px;
+	height: 250px;
+	border: solid white 5px;
+	float: right;
+	margin: 65px 0px 0px 10px;
+}
+
+button {
+	position: relative;
+	left: 540px;
+	background-color: black;
+	padding: 10px;
+	color: white;
+	border-radius: 5px;
+	margin: 0px 0px 10px 0px;
+}
+
+button:hover {
+	background-color: #4d4d4d;
+}
+
+.content {
+	background-color: #b30000;
+	color: white;
+}
+
+.content h3 {
+	padding: 10px 0px;
+}
+
+.right-border {
+	border-right: solid white 1px;
+}
+
+.smallImage {
+	display: block;
+	width: 150px;
+	height: 150px;
+	border: solid white 3px;
+	margin: 10px auto;
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+footer p {
+	margin-bottom: 0px;
+}
