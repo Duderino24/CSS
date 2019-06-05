@@ -1,31 +1,66 @@
-h2, h3 {
-	font-family: 'Paytone One', sans-serif;
-	color: #735329;
+body {
+	margin: 0px;
 }
-
-p {
-	font-family: 'Raleway', sans-serif;
-	color: #735329;
-}
-
 header {
 	position: relative;
 	background-color: white;
 }
 
-.fas {
-	right: -2000px;
+#dot {
+	top: -100px;
 	position: relative;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	animation: slideDownDot 1s ease-out 1.8s forwards;
+
+}
+
+.firstHeader {
+	margin-left: 50px;
+}
+
+h1 {
+	top:-100px;
+	font-size: 3.2rem;
+	font-family: 'Michroma', sans-serif;
+	display: inline-block;
+	position: relative;
+	color: #8C856B;
+	margin-bottom: 0px;
+	padding: 10px;
+	animation: slideDownHeader 1s ease-out 1.8s forwards;
+}
+
+/*Start of Animation for Name*/
+
+@keyframes slideDownHeader {
+	from {top: -100px;}
+	to {top:-2px;}
+}
+
+@keyframes slideDownDot {
+	from {top: -100px;}
+	to {top:-10px;}
+}
+/*End of Animation for Name*/
+
+
+
+.fas {
+	float: right;
+	position: relative;
+	visibility: hidden;
 	top:10px;
 	font-size: 60px;
 	color: #F2AF57;
 	cursor: pointer;
-	animation: slideLeftBars 1s ease-in 1.8s forwards;
+	animation: appear 1s ease-in 1.8s forwards;
 }
 /*Start of Animation for bars*/
-@keyframes slideLeftBars {
-	from {right: -2000px;}
-	to {right: -1360px;}
+@keyframes appear {
+	from {visibility: hidden;}
+	to {visibility: visible;}
 }
 /*End of Animation for bars*/
 
@@ -92,6 +127,10 @@ header {
 }
 
 
+@media screen and (max-width: 1300px) {
+  .sidenav {visibility: hidden;}
+}
+
 @keyframes slideLeftSidebar {
 	from {left: -200px;}
 	to {left:50px;}
@@ -99,8 +138,8 @@ header {
 
 .icon {
 	display: block;
-	padding: 10px;
-	font-size: 30px;
+	padding: 5.5px;
+	font-size: 45px;
 	color: #F2AF57;
 	transition: transform 0.5s;
 }
@@ -110,45 +149,6 @@ header {
 }
 /* End of style  for the sidebar */
 
-
-#dot {
-	top: -100px;
-	position: relative;
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	animation: slideDownDot 1s ease-out 1.8s forwards;
-
-}
-
-.firstHeader {
-	margin-left: 50px;
-}
-
-h1 {
-	top:-100px;
-	font-size: 3.2rem;
-	font-family: 'Michroma', sans-serif;
-	display: inline-block;
-	position: relative;
-	color: #8C856B;
-	margin-bottom: 0px;
-	padding: 10px;
-	animation: slideDownHeader 1s ease-out 1.8s forwards;
-}
-
-/*Start of Animation for Name*/
-
-@keyframes slideDownHeader {
-	from {top: -100px;}
-	to {top:-2px;}
-}
-
-@keyframes slideDownDot {
-	from {top: -100px;}
-	to {top:-10px;}
-}
-/*End of Animation for Name*/
 
 
 /*Style for Navbar*/
@@ -261,18 +261,6 @@ button:hover {
 	margin: 10px auto;
 }
 
-h2, h3 {
-	right: -2500px;
-	position: relative;
-	animation: slideLeft 1s ease-in 1.8s forwards; 
-}
-
-p {
-	left: -2500px;
-	position: relative;
-	animation: slideRight 1s ease-in 1.8s forwards;
-}
-
 
 /*Start of Animation for Texts*/
 
@@ -288,6 +276,31 @@ p {
 /*End of Animation for Texts*/
 
 
+h2, h3 {
+	font-family: 'Paytone One', sans-serif;
+	right: -2500px;
+	position: relative;
+	animation: slideLeft 1s ease-in 1.8s forwards; 
+	color: #735329;
+}
+
+p {
+	
+	left: -2500px;
+	position: relative;
+	animation: slideRight 1s ease-in 1.8s forwards;
+	font-family: 'Raleway', sans-serif;
+	color: #735329;
+}
+
+#about,#goals h2,h3 {
+	font-size: 40px;
+}
+
+#about, #goals p {
+	font-size: 20px;
+}
+
 footer {
 	position: relative;
 	bottom: -2000px;
@@ -299,6 +312,16 @@ footer {
 footer p {
 	margin-bottom: 0px;
 	color: #FBF1DD;
+	float: right;
+	line-height: 2;
+}
+
+footer p:first-of-type {
+	width: 360px;
+}
+
+footer p:last-of-type {
+	width: 250px;
 }
 
 /*Start of animation for Footer*/
@@ -306,4 +329,90 @@ footer p {
 @keyframes slideUp {
 	from {bottom: -2000px;}
 	to {bottom: 0px;}
+}
+
+
+
+.bottomnav {
+	display: flex;
+	visibility: hidden;
+	position: relative;
+	bottom: 0px;
+
+}
+
+
+.bottomnav a {
+	text-decoration: none;
+}
+.iconBottom {
+	display: inline-block;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	font-size: 45px;
+	color: #F2AF57;
+	transition: transform 0.5s;
+}
+
+.iconBottom:hover {
+	transform: scale(1.3);
+}
+
+
+
+@media screen and (max-width: 1300px) {
+  .bottomnav {visibility: visible;}
+}
+
+
+
+
+#about img {
+	position: relative;
+	float: left;
+	border-radius: 15px;
+	width: 170px;
+	height: 230px;
+	left: -2000px;
+	margin: 17px 10px 0px 0px;
+	animation: slideRight 1s ease-in 1.8s forwards;
+}
+
+#goals img {
+	position: relative;
+	float: right;
+	border-radius: 15px;
+	width: 230px;
+	height: 260px;
+	right: -2000px;
+	margin: 17px 10px 0px 0px;
+	animation: slideLeft 1s ease-in 1.8s forwards;
+}
+
+.row p {
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.col-xl-6 img {
+	margin: 1px auto;
+	display: block;
+	position: relative;
+	border-radius: 15px;
+	width: 220px;
+	height: 140px;
+	left: -2000px;
+	animation: slideRight 1s ease-in 1.8s forwards;
+}
+
+.col-xl-4 img {
+	margin: 1px auto;
+	display: block;
+	position: relative;
+	border-radius: 15px;
+	width: 210px;
+	height: 120px;
+	right: -2000px;
+	animation: slideLeft 1s ease-in 1.8s forwards;
 }
