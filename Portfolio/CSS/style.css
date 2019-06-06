@@ -153,16 +153,16 @@ h1 {
 
 /*Style for Navbar*/
 .overlay {
-  
+
   height: 100%;
   width: 0;
-  position: fixed; 
+  position: fixed;
   z-index: 2;
   right: 0;
   top: 0;
   opacity: 0.985;
   background-color: #D99D4E;
-  background-color: #D99D4E; 
+  background-color: #D99D4E;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -170,10 +170,10 @@ h1 {
 
 .overlay-content {
   position: relative;
-  top: 25%; 
-  width: 100%; 
+  top: 25%;
+  width: 100%;
   text-align: center;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .overlay a {
@@ -181,8 +181,8 @@ h1 {
   text-decoration: none;
   font-size: 36px;
   color: #F4D0A1;
-  display: block; 
-  transition: 0.3s; 
+  display: block;
+  transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -280,12 +280,12 @@ h2, h3 {
 	font-family: 'Paytone One', sans-serif;
 	right: -2500px;
 	position: relative;
-	animation: slideLeft 1s ease-in 1.8s forwards; 
+	animation: slideLeft 1s ease-in 1.8s forwards;
 	color: #735329;
 }
 
 p {
-	
+
 	left: -2500px;
 	position: relative;
 	animation: slideRight 1s ease-in 1.8s forwards;
@@ -415,4 +415,32 @@ footer p:last-of-type {
 	height: 120px;
 	right: -2000px;
 	animation: slideLeft 1s ease-in 1.8s forwards;
+}
+
+h6 {
+	color: #8C856B;
+	position: relative;
+	right: -2000px;
+	animation: slideLeft 1s ease-in 1.8s forwards;
+}
+
+.link {
+	text-decoration: none;
+	color: #F2AF57;
+	transition: transform 0.8s;
+}
+
+.link:hover {
+	transform: scale(2);
+	color:#F2AF57;
+	text-decoration: none;
+}
+
+.link:active {
+	color: white;
+}
+#carouselExampleInterval {
+	position: relative;
+	left: -3000px;
+	animation: slideRight 1s ease-in 1.8s forwards;
 }
